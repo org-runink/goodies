@@ -44,7 +44,7 @@ reflector --latest 5 --sort rate --save /etc/pacman.d/mirrorlist
 
 pacman-key --init && pacman -Sy archlinux-keyring
 
-pacstrap -K /mnt base base-devel btrfs-progs intel-ucode mkinitcpio-nfs-utils xf86-video-intel xorg-server xf86-input-libinput linux-firmware sof-firmware linux-firmware-qlogic fwupd wireless-regdb networkmanager terminus-font man-db man-pages texinfo git vim plymouth snapper pam-u2f macchanger openssh sddm plasma libreoffice terraform code dbeaver code git docker python rust
+pacstrap -K /mnt base base-devel btrfs-progs intel-ucode mkinitcpio-nfs-utils xf86-video-intel xorg-server xf86-input-libinput linux-firmware sof-firmware linux-firmware-qlogic fwupd wireless-regdb networkmanager terminus-font man-db man-pages texinfo git vim plymouth snapper pam-u2f macchanger openssh plasma libreoffice git docker python
 
 genfstab -U /mnt >> /mnt/etc/fstab
 
